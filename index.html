@@ -23,14 +23,14 @@
             </a>
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Trainers</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#trainers" class="nav-link">Trainers</a></li>
                 </ul>
             </div>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login">Login</a></li>
                 <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#register">Register</a></li>
-                <li class="nav-item"><a href="#" class="nav-link join">Join as teacher</a></li>
+                <li class="nav-item"><a href="#" class="nav-link join" data-toggle="modal" data-target="#register">Join as teacher</a></li>
             </ul>
             <button class="navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
@@ -75,11 +75,11 @@
                 </div>
             </div>
         </div>
-        <img src="./img/header_triangle_cut_opacity.png" alt="#" class="header_treangle_cut_opacity">
-        <img src="./img/header_triangle_cut_bottom.png" alt="#" class="header_treangle_cut_bottom">
-        <img src="./img/header_triangle_cut_left.png" alt="#" class="header_treangle_cut_left">
+        <img src="./img/header_triangle_cut_opacity.png" alt="#" class="header_treangle_cut_opacity" data-depth='0.2'>
+        <img src="./img/welcome_triangle_slider_w.png" alt="#" class="header_treangle_cut_bottom" data-depth='0.4'>
+        <img src="./img/welcome_triangle_slider_w.png" alt="#" class="header_treangle_cut_left" data-depth='0.6'>
     </header>
-    <section class="progs">
+    <section class="progs" id="courses">
         <div class="container">
             <div class="row wow animate__fadeInDown"  data-wow-duration="1s" data-wow-offset="10">
                 <div class="col">
@@ -116,7 +116,7 @@
                         </div>
                         <div class="flip_text">
                             <h3 class="flip_text_label">Lorem, ipsum dolor.</h3>
-                            <h4 class="flip_text_person" data-toggle="modal" data-target="#person1"><img class="flip_person_img" src="./img/flip_person.png"
+                            <h4 class="flip_text_person"><img class="flip_person_img" src="./img/flip_person.png"
                                     alt="#"> Lorem, ipsum dolor.</h4>
 
                             <p class="flip_text_stats"><img src="./img/flip_clock.png" alt="#"
@@ -128,7 +128,7 @@
                             <p class="flip_text_stats"><img src="./img/flip_coin.png" alt="#"
                                     class="flip_stats_img">Lorem ipsum</p>
                             <div class="flip_text_btns">
-                                <button>Read more</button>
+                                <button data-toggle="modal" data-target="#person1" >Read more</button>
                                 <button>Enroll now</button>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="flip_text">
                             <h3 class="flip_text_label">Lorem, ipsum dolor.</h3>
-                            <h4 class="flip_text_person" data-toggle="modal" data-target="#person2"><img class="flip_person_img" src="./img/flip_person.png"
+                            <h4 class="flip_text_person"><img class="flip_person_img" src="./img/flip_person.png"
                                     alt="#"> Lorem, ipsum dolor.</h4>
 
 
@@ -157,7 +157,7 @@
                                     class="flip_stats_img">Lorem ipsum</p>
 
                             <div class="flip_text_btns">
-                                <button>Read more</button>
+                                <button data-toggle="modal" data-target="#person2">Read more</button>
                                 <button>Enroll now</button>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                         </div>
                         <div class="flip_text">
                             <h3 class="flip_text_label">Lorem, ipsum dolor.</h3>
-                            <h4 class="flip_text_person" data-toggle="modal" data-target="#person3"><img
+                            <h4 class="flip_text_person"><img
                                     class="flip_person_img" src="./img/flip_person.png" alt="#"> Lorem, ipsum dolor.
                             </h4>
 
@@ -185,7 +185,7 @@
                                     class="flip_stats_img">Lorem ipsum</p>
 
                             <div class="flip_text_btns">
-                                <button>Read more</button>
+                                <button data-toggle="modal" data-target="#person3">Read more</button>
                                 <button>Email now</button>
                             </div>
                         </div>
@@ -313,36 +313,40 @@
 
     </section>
     <section class="welcome">
-        <svg version="1.1" id="Слой_2" class="welcome_part_left wow animate__fadeIn"  data-wow-duration="1.6s" data-wow-offset="10" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill: url(#SVGID_1_);
-                }
-            </style>
-            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
-                y2="12.9147">
-                <stop offset="0" style="stop-color:#F36C54" />
-                <stop offset="1" style="stop-color:#C42155" />
-            </linearGradient>
-            <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
-            C271.7,210.6,266.3,216,259.7,216z" />
-        </svg>
-        <svg version="1.1" id="Слой_2" class="welcome_part_right wow animate__fadeIn"  data-wow-duration="1.6s" data-wow-offset="10"  xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill: url(#SVGID_1_);
-                }
-            </style>
-            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
-                y2="12.9147">
-                <stop offset="0" style="stop-color:#F36C54" />
-                <stop offset="1" style="stop-color:#C42155" />
-            </linearGradient>
-            <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
-            C271.7,210.6,266.3,216,259.7,216z" />
-        </svg>
+        <div data-depth='0.2' style="position: absolute; top: 0;left: 0;right: 0;bottom: 0;">
+            <svg version="1.1" id="Слой_2" class="welcome_part_left wow animate__fadeIn" data-wow-duration="1.6s" data-wow-offset="10" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_1_);
+                    }
+                </style>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
+                    y2="12.9147">
+                    <stop offset="0" style="stop-color:#F36C54" />
+                    <stop offset="1" style="stop-color:#C42155" />
+                </linearGradient>
+                <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
+                C271.7,210.6,266.3,216,259.7,216z" />
+            </svg>
+        </div>
+        <div data-depth='0.2' style="position: absolute; top: 0;left: 0;right: 0;bottom: 0;">
+            <svg version="1.1" id="Слой_2" class="welcome_part_right wow animate__fadeIn" data-depth='0.2' data-wow-duration="1.6s" data-wow-offset="10"  xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_1_);
+                    }
+                </style>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
+                    y2="12.9147">
+                    <stop offset="0" style="stop-color:#F36C54" />
+                    <stop offset="1" style="stop-color:#C42155" />
+                </linearGradient>
+                <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
+                C271.7,210.6,266.3,216,259.7,216z" />
+            </svg>
+        </div>
         <div class="container position-relative wow animate__fadeIn"  data-wow-duration="1.8s" data-wow-offset="10" >
             <div class="row justify-content-center">
                 <a class="welcome-control-prev" href="#welcome_slider" role="button" data-slide="prev">
@@ -540,36 +544,36 @@
                         <div class="working_point wow animate__zoomInLeft"  data-wow-duration="1s" data-wow-offset="100" id="point1">
                             1
                         </div>
-                        <div class="working_step wow animate__zoomInLeft"  data-wow-duration="1.2s" data-wow-offset="100"  id="step2">
+                        <div class="working_step wow animate__zoomInLeft"  data-wow-duration="2.2s" data-wow-offset="100"  id="step2">
                             <h3 class="working_step_title">Step 2</h3>
                             <p class="working_step_description">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Assumenda quaerat magnam praesentium!</p>
                         </div>
-                        <div class="working_point wow animate__zoomInLeft"  data-wow-duration="1s" data-wow-offset="100"  id="point2">
+                        <div class="working_point wow animate__zoomInLeft"  data-wow-duration="2s" data-wow-offset="100"  id="point2">
                             2
                         </div>
-                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="1.2s" data-wow-offset="100"  id="step3">
+                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="3.2s" data-wow-offset="100"  id="step3">
                             <h3 class="working_step_title">Step 3</h3>
                             <p class="working_step_description">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Assumenda quaerat magnam praesentium!</p>
                         </div>
-                        <div class="working_point wow animate__zoomInLeft"  data-wow-duration="1s" data-wow-offset="100"  id="point3">
+                        <div class="working_point wow animate__zoomInLeft"  data-wow-duration="3s" data-wow-offset="100"  id="point3">
                             3
                         </div>
-                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="1.2s" data-wow-offset="100"  id="step4">
+                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="4.2s" data-wow-offset="100"  id="step4">
                             <h3 class="working_step_title">Step 4</h3>
                             <p class="working_step_description">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Assumenda quaerat magnam praesentium!</p>
                         </div>
-                        <div class="working_point wow animate__zoomInRight"  data-wow-duration="1s" data-wow-offset="100"  id="point4">
+                        <div class="working_point wow animate__zoomInRight"  data-wow-duration="4s" data-wow-offset="100"  id="point4">
                             4
                         </div>
-                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="1.2s" data-wow-offset="100"  id="step5">
+                        <div class="working_step wow animate__zoomInRight"  data-wow-duration="5.2s" data-wow-offset="100"  id="step5">
                             <h3 class="working_step_title">Step 5</h3>
                             <p class="working_step_description">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Assumenda quaerat magnam praesentium!</p>
                         </div>
-                        <div class="working_point wow animate__zoomInRight"  data-wow-duration="1s" data-wow-offset="100"  id="point5">
+                        <div class="working_point wow animate__zoomInRight"  data-wow-duration="5s" data-wow-offset="100"  id="point5">
                             5
                         </div>
                     </div>
@@ -577,37 +581,41 @@
             </div>
         </div>
     </section>
-    <section class="teachers">
-        <svg version="1.1" id="Слой_2" class="welcome_part_left wow animate__fadeIn"  data-wow-duration="1.6s" data-wow-offset="10" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill: url(#SVGID_1_);
-                }
-            </style>
-            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
-                y2="12.9147">
-                <stop offset="0" style="stop-color:#F36C54" />
-                <stop offset="1" style="stop-color:#C42155" />
-            </linearGradient>
-            <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
-            C271.7,210.6,266.3,216,259.7,216z" />
-        </svg>
-        <svg version="1.1" id="Слой_2" class="welcome_part_right wow animate__fadeIn"  data-wow-duration="1.6s" data-wow-offset="10"  xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill: url(#SVGID_1_);
-                }
-            </style>
-            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
-                y2="12.9147">
-                <stop offset="0" style="stop-color:#F36C54" />
-                <stop offset="1" style="stop-color:#C42155" />
-            </linearGradient>
-            <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
-            C271.7,210.6,266.3,216,259.7,216z" />
-        </svg>
+    <section class="teachers" id="trainers">
+        <div data-depth='0.2' style="position: absolute; top: 0;left: 0;right: 0;bottom: 0;">
+            <svg version="1.1" id="Слой_2" class="welcome_part_left wow animate__fadeIn" data-wow-duration="1.6s" data-wow-offset="10" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_1_);
+                    }
+                </style>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
+                    y2="12.9147">
+                    <stop offset="0" style="stop-color:#F36C54" />
+                    <stop offset="1" style="stop-color:#C42155" />
+                </linearGradient>
+                <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
+                C271.7,210.6,266.3,216,259.7,216z" />
+            </svg>
+        </div>
+        <div data-depth='0.2' style="position: absolute; top: 0;left: 0;right: 0;bottom: 0;">
+            <svg version="1.1" id="Слой_2" class="welcome_part_right wow animate__fadeIn" data-depth='0.2' data-wow-duration="1.6s" data-wow-offset="10"  xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 293.9 216" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_1_);
+                    }
+                </style>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.354" y1="192.9147" x2="292.034"
+                    y2="12.9147">
+                    <stop offset="0" style="stop-color:#F36C54" />
+                    <stop offset="1" style="stop-color:#C42155" />
+                </linearGradient>
+                <path class="st0" d="M259.7,216L25,197.1c-6.6,0-12-5.4-12-12L0,33.4c0-6.6,5.4-12,12-12L281.4,0.7c6.6,0,12,5.4,12,12L271.7,204
+                C271.7,210.6,266.3,216,259.7,216z" />
+            </svg>
+        </div>
         <div class="container position-relative wow animate__fadeIn"  data-wow-duration="1.8s" data-wow-offset="10" >
             <div class="row justify-content-center">
                 <a class="welcome-control-prev" href="#teachers_slider" role="button" data-slide="prev">
@@ -711,7 +719,7 @@
                 <h2 class="section_heading">Choose your plan</h2>
             </div>
             <div class="row">
-                <div class="col-md-4 d-flex flex-column align-items-center wow animate__flipInY"  data-wow-duration="1.6s" data-wow-offset="10" >
+                <div class="col-md-4 d-flex flex-column align-items-start wow animate__flipInY"  data-wow-duration="1.6s" data-wow-offset="10" >
                     <div class="pricing_block">
                         <h3 class="pricing_title">First option</h3>
                         <h4 class="pricing_subtitle">$45 per month</h4>
@@ -749,7 +757,7 @@
                         <button class="pricing_btn">Read more</button>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex flex-column align-items-center wow animate__flipInY"  data-wow-duration="2.4s" data-wow-offset="10" >
+                <div class="col-md-4 d-flex flex-column align-items-end wow animate__flipInY"  data-wow-duration="2.4s" data-wow-offset="10" >
                     <div class="pricing_block">
                         <h3 class="pricing_title">First option</h3>
                         <h4 class="pricing_subtitle">$45 per month</h4>
@@ -847,11 +855,15 @@
                 </div>
             </div>
         </div>
-        <img src="./img/welcome_triangle_slider_r.png" alt="contacts_triangle" class="contacts_triangle red">
-        <img src="./img/welcome_triangle_slider_w.png" alt="contacts_triangle" class="contacts_triangle white">
-        <img src="./img/contact_girl.png" alt="contacts_girl" class="contacts_girl">
+        <div class="contacts_girl_scene" style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;">
+            <img src="./img/contact_girl.png" alt="contacts_girl" class="contacts_girl" data-depth="0.2">
+        </div>
         <img src="./img/contacts_shape1.svg" alt="contacts_shape" class="contacts_shape shape1">
         <img src="./img/contacts_shape2.svg" alt="contacts_shape" class="contacts_shape shape2">
+        <div class="contacts_triangle_scene" style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;">
+            <img src="./img/welcome_triangle_slider_r.png" alt="contacts_triangle" class="contacts_triangle red" data-depth="0.6">
+            <img src="./img/welcome_triangle_slider_w.png" alt="contacts_triangle" class="contacts_triangle white" data-depth="0.8">
+        </div>
     </section>
     <footer class=" wow animate__fadeInUp"  data-wow-duration="1.2s" data-wow-offset="10">
         Copyright 2021 Trainoe Education College. Team Sos Computer.
@@ -899,12 +911,12 @@
         </form>
     </div>
 
-    <div class="modal fade auth-modal" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+    <div class="modal fade auth-modal" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel"
+    aria-hidden="true" style="z-index:1190" >
         <form class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="person1label">Registration</h5>
+                    <h5 class="modal-title" id="registerLabel">Registration</h5>
                     <p>description</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -1008,6 +1020,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="./js/parallax.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

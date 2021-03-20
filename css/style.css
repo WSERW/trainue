@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background-color:#fff !important;
@@ -239,13 +242,13 @@ img.header_triangle.white{
     left: 10px;
     top: 2px;
     transform-origin: 43% 52%;
-    animation: spin 8s infinite linear;
+    animation: spin 1s infinite alternate linear;
 }
 img.header_triangle.red{
     right: 50px;
     top: 2px;
     transform-origin: 55% 55%;
-    animation: spin-reverse 8s infinite linear;
+    animation: spin-reverse 1s infinite alternate linear;
 }
 img.header_girl{
     top: 50px;
@@ -257,7 +260,7 @@ img.header_girl{
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(45deg);
     }
 }
 
@@ -266,7 +269,7 @@ img.header_girl{
         transform: rotate(-0deg);
     }
     to{
-        transform: rotate(-360deg);
+        transform: rotate(-45deg);
     }
 }
 /* 
@@ -311,14 +314,14 @@ img.header_girl{
 .header_treangle_cut_bottom{
     position: absolute;
     z-index: 1;
-    bottom : 0;
-    right: 50px;
+    bottom : -80px;
+    right: 80px;
 }
 .header_treangle_cut_left{
     position: absolute;
     z-index: 1;
     bottom : -25px;
-    left: 0;
+    left: -100px;
 }
 /* courses */
 .filter_list{
@@ -345,6 +348,8 @@ img.header_girl{
     color: var(--main-blue);
     background-color: transparent;
     text-decoration: underline;
+    cursor: pointer;
+    box-shadow: none;
 }
 .flip {
     margin-top: 50px;
@@ -651,10 +656,10 @@ img.header_girl{
     transform: translate(0,-50%);
 }
 .welcome_part_left{
-    left: -240px;
+    left: calc(-440px + 10vw);
 }
 .welcome_part_right{
-    right: -240px;
+    right: calc(-440px + 10vw);
 }
 #teacher_shape path{
     width: 100%;
@@ -669,14 +674,14 @@ img.welcome_triangle.red{
     right: 40px;
     top: 20px;
     transform-origin: 55% 55%;
-    animation: spin-reverse 8s infinite linear;
+    animation: spin-reverse 1s infinite alternate linear;
 }
 img.welcome_triangle.white{
     width: 250px;
     top: 30px;
     left: 110px;
     transform-origin: 45% 52%;
-    animation: spin 8s infinite linear;
+    animation: spin 1s infinite alternate linear;
 }
 .welcome-control-prev,.welcome-control-next{
     box-shadow: 0 0 20px 1px #eee;
@@ -885,20 +890,21 @@ img.welcome_triangle.white{
     padding-bottom: 150px;
 }
 .pricing_block{
-    width: 360px;
+    width: 340px;
     height: 425px;
     padding: 45px 60px;
     border-radius: 10px;
-    /* box-shadow: 0 0 20px 1px #bbb; */
+    box-shadow: 0 0 20px 1px #bbb;
     text-align: center;
     position: relative;
     background-color: #fff;
 }
 .pricing_block::before{
-    content: url(../img/pricing_particles.png);
+    width: 380px;
+    content: url(../img/pricing_particles.svg);
     display: block;
     position: absolute;
-    top: 53%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -999;
@@ -922,6 +928,7 @@ img.welcome_triangle.white{
     position: relative;
     font-size: 18px;
     margin-bottom: 20px;
+    padding-left: 40px;
 }
 .feature_icon{
     position: absolute;
@@ -930,7 +937,7 @@ img.welcome_triangle.white{
     top: 50%;
     transform: translate(0, -50%);
     object-fit: contain;
-    left: -40px;
+    left: 0px;
 }
 .pricing_btn{
     position: absolute;
@@ -960,7 +967,7 @@ img.welcome_triangle.white{
 }
 .contacts_girl{
     position: absolute;
-    right: 120px;
+    right: 15vw;
     top: 30%;
 }
 .contacts_shape{
@@ -1001,10 +1008,11 @@ img.welcome_triangle.white{
     margin-bottom: 100px;
     font-size: 20px;
 }
-.form_control{
+.contacts .form_control{
     outline: none;
-    border: none;
-    border-bottom: 1px solid #ddd;
+    border: none !important;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd !important;
     padding: 15px;
     margin-top:20px;
 }
