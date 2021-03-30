@@ -692,12 +692,13 @@ img.welcome_triangle.white{
     transform: translate(0,-50%);
     top: 50%;
     background-color: #fff;
+    z-index: 999;
 }
 .welcome-control-prev{
-    left:-50px;
+    left: calc(10vw - 100px);
 }
 .welcome-control-next{
-    right:-50px;
+    right: calc(10vw - 100px);
 }
 .welcome-control-prev-icon{
     opacity: .7;
@@ -734,9 +735,12 @@ img.welcome_triangle.white{
 .welcome_block_img{
     flex-grow: 1;
 }
-.welcom_block_header{
+.welcome_block_header{
     color: var(--main-red) !important;
     font-weight: 700;
+}
+.welcome_block_header span{
+    font-size: 40px;
 }
 .welcome_block_btn{
     text-transform: capitalize;
@@ -1058,4 +1062,74 @@ footer{
     text-align: center;
     padding: 5px 0;
     z-index: 999;
+}
+
+@media screen and (min-width: 992px){
+    .flip_card{
+        width: 320px;
+    }
+    .flip_text{
+        width: 280px;
+    }
+    .welcome_block_header{
+        font-size: 20px;
+    }
+    .welcome_block_header span{
+        font-size: 24px;
+    }
+    .welcome_block_text{
+        font-size: 14px;
+    }
+    .welcome_slide .header_png{
+        height: 315px;
+        margin-top: -10px;
+    }
+    .working_map{
+        transform: scale(0.8) translate(-50px);
+    }
+    .working_point#point2{
+        top: 42%;
+    }
+    .working_step#step2{
+        top: 60%;
+    }
+    .working_point#point3{
+        top: 32%;
+    }
+    .working_point#point4{
+        top: 50%;
+    }
+    .working_step#step4{
+        top: 68%;
+    }
+    .working_point#point5{
+        top: 23%;
+    }
+    .working_step#step5{
+        left: 90%;
+    }
+    .working_serfer{
+        right: 0;
+    }
+    .pricing_block{
+        width: 300px;
+        padding: 20px;
+    }
+    .pricing_block::before{
+        width: 320px;
+        top: 45%;
+    }
+    .contacts_girl{
+        right: 1vw;
+    }
+}
+@media screen and (min-width: 768px){
+    .header_png{
+        flex-shrink: 0;
+        right: 200px;
+    }
+    .header_social{
+        position: relative;
+        top: 100px;
+    }
 }
