@@ -198,6 +198,9 @@ nav{
     margin-top: 2px;
     border-radius: 20px;
 }
+.navbar-toggler{
+    width: auto;
+}
 /* header */
 header{
     position: relative;
@@ -1064,7 +1067,7 @@ footer{
     z-index: 999;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 1200px){
     .flip_card{
         width: 320px;
     }
@@ -1123,13 +1126,126 @@ footer{
         right: 1vw;
     }
 }
-@media screen and (min-width: 768px){
-    .header_png{
+@media screen and (max-width: 992px){
+    .navbar-brand{
+        margin: 0;
+    }
+    header .header_png{
         flex-shrink: 0;
         right: 200px;
     }
     .header_social{
         position: relative;
         top: 100px;
+    }
+    .welcome_block{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .welcome_block_text{
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+    #swg{
+        display: none;
+    }
+    .welcome_block_img{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        position: relative;
+        right: 100px;
+    }
+    .working_map{
+        padding: 0;
+        height: 800px;
+    }
+    .working_point{
+        left: 40% !important;
+    }
+    .working_point#point1{
+        top: 0;
+    }
+    .working_point#point2{
+        top: 200px;
+    }
+    .working_point#point3{
+        top: 400px;
+    }
+    .working_point#point4{
+        top: 600px;
+    }
+    .working_point#point5{
+        top: 800px;
+    }
+    .working_step{
+        left: 60% !important;
+    }
+    .working_step#step1{
+        top: 0;
+    }
+    .working_step#step2{
+        top: 200px;
+    }
+    .working_step#step3{
+        top: 400px;
+    }
+    .working_step#step4{
+        top: 600px;
+    }
+    .working_step#step5{
+        top: 800px;
+    }
+    .teachers_block{
+        padding: 20px;
+    }
+    .teachers_block_header{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .description-main{
+        width: 100%;
+    }
+    .working_point{
+        left: 20% !important;
+    }
+    .contacts_girl_scene{
+        display: none;
+    }
+    .contacts_triangle_scene{
+        display: none;
+    }
+    .welcome_block_img{
+        display: none;
+    }
+    .welcome-control-prev{
+        opacity: 0.4;
+        left: 0;
+    }
+    .welcome-control-next{
+        opacity: 0.4;
+        right: 0;
+    }
+    .navbar-collapse.collapsing,.navbar-collapse.show{
+        padding: 30% 10%;
+        font-size: 32px;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #fff;
+        position: absolute !important;
+        top: 0;
+        right: 0;
+    }
+    .navbar-collapse.collapsing .join ,.navbar-collapse.show .join{
+        font-size: 32px;
+        width: auto;
+        border-radius: 50px;
+    }
+    .navbar-collapse.collapsing li,.navbar-collapse.show li{
+        margin-bottom: 20px;
     }
 }
